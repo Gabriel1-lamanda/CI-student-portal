@@ -1,0 +1,36 @@
+INFO - 2023-09-30 10:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-30 10:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:24:52 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2023-09-30 10:24:52 --> Invalid file: "register_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('register_view', [], true)
+ 3 APPPATH\Controllers\Auth.php(53): view('register_view')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->register()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 10:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:25:08 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2023-09-30 10:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 10:32:13 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2023-09-30 10:32:13 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH\Views\auth\register_view.php on line 1.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/register_view', [], true)
+ 4 APPPATH\Controllers\Auth.php(53): view('auth/register_view')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->register()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-30 11:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 11:21:40 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2023-09-30 11:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 11:22:03 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2023-09-30 11:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 11:24:01 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2023-09-30 11:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 11:26:27 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2023-09-30 11:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-30 11:28:37 --> Session: Sessions is enabled, and one exists. Please don't $session->start();

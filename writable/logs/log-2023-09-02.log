@@ -1,0 +1,144 @@
+CRITICAL - 2023-09-02 13:36:14 --> Call to undefined function link_tag()
+in APPPATH\Views\auth\auth-login-basic.html on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth-login-basic.html', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('auth/auth-login-basic.html')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 13:37:41 --> Call to undefined function link_tag()
+in APPPATH\Views\auth\auth-login-basic.html on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth-login-basic.html', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('auth/auth-login-basic.html')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 13:41:58 --> Call to undefined function link_tag()
+in APPPATH\Views\auth\auth-login-basic.html on line 55.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth-login-basic.html', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('auth/auth-login-basic.html')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 13:42:32 --> Call to undefined function link_tag()
+in APPPATH\Views\auth\auth-login-basic.html on line 55.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth-login-basic.html', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('auth/auth-login-basic.html')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 13:43:09 --> Invalid file: "auth/auth-login-basic.html"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/auth-login-basic.html')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth-login-basic.html', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('auth/auth-login-basic.html')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 13:43:58 --> Call to undefined function link_tag()
+in APPPATH\Views\auth\auth.php on line 55.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('auth/auth')
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 14:44:21 --> Invalid file: "auth/auth.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/auth.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('auth/auth', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('auth/auth')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 16:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-02 16:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-02 16:06:01 --> Undefined array key "matric"
+in APPPATH\Controllers\Auth.php on line 19.
+ 1 APPPATH\Controllers\Auth.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "matric"', 'C:\\xampp\\htdocs\\uniportals\\app\\Controllers\\Auth.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 16:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-02 16:06:42 --> Undefined array key "matric"
+in APPPATH\Controllers\Auth.php on line 19.
+ 1 APPPATH\Controllers\Auth.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "matric"', 'C:\\xampp\\htdocs\\uniportals\\app\\Controllers\\Auth.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 16:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-02 16:08:30 --> Undefined array key "matric"
+in APPPATH\Controllers\Auth.php on line 19.
+ 1 APPPATH\Controllers\Auth.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "matric"', 'C:\\xampp\\htdocs\\uniportals\\app\\Controllers\\Auth.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 16:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-02 16:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-02 16:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-02 16:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-02 16:10:10 --> mysqli_sql_exception: Unknown column 'passowrd' in 'where clause' in C:\xampp\htdocs\uniportals\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\uniportals\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\uniportals\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\uniportals\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\uniportals\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\uniportals\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\uniportals\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\uniportals\app\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\uniportals\system\CodeIgniter.php(915): App\Controllers\Auth->signin()
+#8 C:\xampp\htdocs\uniportals\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\uniportals\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\uniportals\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-02 16:10:10 --> Unknown column 'passowrd' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `students`
+WHERE `matric` = :matric:
+AND `passowrd` = :passowrd:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Auth.php(25): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 16:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-02 16:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-02 16:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-02 16:53:21 --> Call to a member function set() on null
+in APPPATH\Controllers\Auth.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 17:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-02 17:12:10 --> Call to a member function set() on null
+in APPPATH\Controllers\Auth.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Auth->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-02 17:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-02 17:14:28 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2023-09-02 17:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

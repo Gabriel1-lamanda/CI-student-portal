@@ -10,7 +10,7 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        $this->cachePage(5000000);
+        // $this->cachePage(5000000);
         return view('Dashboard_view');
     }
     public function biodata()

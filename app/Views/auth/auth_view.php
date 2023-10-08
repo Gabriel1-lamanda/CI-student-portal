@@ -37,7 +37,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/img/favicon/favicon.ico"
+      href="<?= base_url() ?>assets/img/favicon/favicon.ico"
     />
 
     <!-- Fonts -->
@@ -181,12 +181,12 @@
                     </svg>
                   </span>
                   <span class="app-brand-text demo text-body fw-bolder"
-                    >Sneat</span
+                    >Student Portal</span
                   >
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to Sneat!</h4>
+              <h4 class="mb-2">University Student Portal</h4>
               <p class="mb-4">
                  Sign-in to your portal
               </p>
@@ -278,18 +278,18 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../assets/vendor/libs/popper/popper.js"></script>
-    <script src="../assets/vendor/js/bootstrap.js"></script>
-    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/libs/popper/popper.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/js/bootstrap.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="../assets/js/main.js"></script>
+    <script src="<?= base_url() ?>assets/js/main.js"></script>
 
     <!-- Page JS -->
 

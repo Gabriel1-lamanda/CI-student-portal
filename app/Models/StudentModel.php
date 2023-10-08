@@ -14,7 +14,7 @@ class StudentModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'martic',
+        'matric',
         'college',
         'department',
         'firstname',
@@ -22,6 +22,13 @@ class StudentModel extends Model
         'gender',
         'status',
         'password',
+        'email',
+        'dateofbirth',
+        'address',
+        'nationality',
+        'religion',
+        'local_govt',
+        'phone'
     ];
 
     // Dates

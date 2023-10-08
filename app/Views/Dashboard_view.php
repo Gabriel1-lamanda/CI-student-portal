@@ -12,7 +12,7 @@
                     <div class="d-flex align-items-end row">
                         <div class="col-sm-7">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Welcome Back <?= $session->firstname ? $session->firstname : 'Admin' ?></h5>
+                                <h5 class="card-title text-primary">Welcome Back <?= $session->firstname ? $session->firstname : 'Admin0' ?></h5>
                                 <p class="mb-4">
                                     <span class="fw-bold"> <?= $session->college ? $session->college : 'College' ?></span> <br />
                                 </p>

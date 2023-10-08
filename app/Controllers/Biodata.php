@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Libraries\ProfileImageUploader;
+use App\Libraries\RandomString;
+use App\Libraries\Hash;
 use App\Models\ProfileImageModel;
 use App\Models\StudentModel;
 
@@ -27,6 +29,29 @@ class Biodata extends BaseController
         }
         echo '<pre>';
         print_r($this->request->getFiles());
+        die;
+    }
+    public function register()
+    {
+        $studentModel = model(StudentModel::class);
+        $generatedString = RandomString::generateRandomString();
+
+
+
+
+
+        $postdata = $this->request->getPost();
+        $postdata['matric'] = '180' . $generatedString;
+        $postdata['password'] = Hash::make($postdata['password']);
+        $postdata['gender'] = 'male';
+
+
+        $studentModel->insert($postdata);
+
+        // Registering a student done
+
+        echo '<pre>';
+        print_r($postdata['email']);
         die;
     }
 }

@@ -25,15 +25,14 @@ class Auth extends BaseController
     {
         $studentmodel = new StudentModel();
         $login_data = $this->request->getPost(); // get the login data and saving it in a variable
-
+        $result = $this->findStudent($login_data['matric']);
+        $checked_password = Hash::check($login_data['password'], $result['password']);
 
         // Get the matching row from the data base.
-        $result = $studentmodel->where('matric', $login_data['matric'])
-            ->first();
         //confirm accuracy in the password
 
         if ($result) {
-            if (Hash::check($result['password'], $login_data['password'])) {
+            if ($checked_password) {
                 $newdata = [
                     'firstname'  => $result['firstname'],
                     'matric'     => $result['matric'],
@@ -42,14 +41,31 @@ class Auth extends BaseController
                     'id' => $result['id'],
                 ];
 
-                $this->session->set($newdata);
+                $session_set = $this->session->set($newdata);
+                $this->session->start();
+                if ($session_set) {
+                    return 'bruh';
+                }
                 return redirect()->to('dashboard'); // redirect to the dashboard
+            } else {
+                log_message('error', 'user with the cookie id tried to log in on this date');
             }
         }
-        return redirect()->back()->withInput();
+        echo '<pre>';
+        print_r('didnt work');
+        die;
     }
     public function register()
     {
         return view('auth/register_view');
+    }
+    private function findStudent($matric_number)
+    {
+        $studentmodel = model(StudentModel::class);
+        $result = $studentmodel->where('matric', $matric_number)->first();
+        if ($result) {
+            return $result;
+        }
+        return null;
     }
 }

@@ -8,10 +8,10 @@ use App\Controllers\BaseController;
 
 class Dashboard extends BaseController
 {
-    public function index()
+
+    public function dashboard()
     {
-        // $this->cachePage(5000000);
-        return view('Dashboard_view');
+        return view('dashboard_view');
     }
     public function biodata()
     {

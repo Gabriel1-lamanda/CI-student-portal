@@ -46,6 +46,7 @@ class Auth extends BaseController
                 if ($session_set) {
                     return 'bruh';
                 }
+                // return view('dashboard_view');
                 return redirect()->to('dashboard'); // redirect to the dashboard
             } else {
                 log_message('error', 'user with the cookie id tried to log in on this date');

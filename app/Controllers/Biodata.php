@@ -37,8 +37,11 @@ class Biodata extends BaseController
         $studentModel = model(StudentModel::class);
         $generatedString = RandomString::generateRandomString();
         $postdata = $this->request->getPost();
+        // echo '<pre>';
+        // print_r($postdata);
+        // die;
         if ($postdata['type']) {
-            $postdata['password'] = Hash::make($postdata['password']);
+            $postdata['password'] = Hash::make($postdata['lastname']);
             $query = $studentModel->update(session('id'), $postdata);
             if ($query) {
                 return redirect()->to('panel');
@@ -53,7 +56,10 @@ class Biodata extends BaseController
         $postdata['gender'] = 'male';
 
 
-        $studentModel->insert($postdata);
+        $query = $studentModel->insert($postdata);
+        if ($query) {
+            return redirect()->to('register');
+        }
 
         // Registering a student done
 

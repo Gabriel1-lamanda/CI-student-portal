@@ -28,7 +28,9 @@ class StudentModel extends Model
         'nationality',
         'religion',
         'local_govt',
-        'phone'
+        'phone',
+        'state',
+        'local-government'
     ];
 
     // Dates

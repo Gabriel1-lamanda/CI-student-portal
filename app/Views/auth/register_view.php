@@ -73,12 +73,47 @@
                         <input value="<?= isset($student) ? $student['phone'] : '' ?>" name="phone" type="number" id="basic-default-phone" class="form-control phone-mask" aria-label="658 799 8941" aria-describedby="basic-default-phone" />
                       </div>
                     </div>
+
                     <div class="mb-3 row">
                       <label for="html5-text-input" class="col-md-2 col-form-label">Nationality</label>
                       <div class="col-md-10">
                         <input value="<?= isset($student) ? $student['nationality'] : '' ?>" name="nationality" class="form-control" type="text" value="" id="html5-text-input" <?= isset($readonly) ? 'disabled' : '' ?> />
                       </div>
                     </div>
+                    <div class="mb-3 row">
+                      <label for="html5-text-input" class="col-md-2 col-form-label">State</label>
+                      <div class="col-md-10">
+                        <select name="state" id="defaultSelect" class="form-select">
+                          <option>Default select</option>
+                          <option value="lagos">Lagos</option>
+                          <option value="rivers">Rivers</option>
+                          <option value="ondo">Ondo</option>
+                          <option value="ogun">Ogun</option>
+                          <option value="kebbbi">Kebbi</option>
+                          <option value="kogi">Kogi</option>
+                          <option value="delta">Delta</option>
+                          <option value="Oyo">Oyo</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="html5-password-input" class="col-md-2 col-form-label">Local Government Area</label>
+                      <div class="col-md-10">
+                        <input value="" name="local-govt" class="form-control" type="text" id="html5-password-input" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="html5-text-input" class="col-md-2 col-form-label">Religion</label>
+                      <div class="col-md-10">
+                        <select name="religion" id="defaultSelect" class="form-select">
+                          <option value="christianity">Christianity</option>
+                          <option value="islam">Islam</option>
+                          <option value="traditional">Traditional</option>
+                          <option value="other">Others</option>
+                        </select>
+                      </div>
+                    </div>
+
 
                     <div class="mb-3 row">
                       <label for="html5-password-input" class="col-md-2 col-form-label">Password</label>

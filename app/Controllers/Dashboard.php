@@ -21,4 +21,8 @@ class Dashboard extends BaseController
     {
         return view('biodata/uploadphoto_view');
     }
+    public function panel()
+    {
+        return view('dashboard_view');
+    }
 }

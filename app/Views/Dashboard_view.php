@@ -12,10 +12,10 @@
                     <div class="d-flex align-items-end row">
                         <div class="col-sm-7">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">We are the ones<?= $session->firstname ? $session->firstname : $session->firstname ?></h5>
+
                                 <h5 class="card-title text-primary">Welcome Back <?= $session->firstname ? $session->firstname : $session->firstname ?></h5>
                                 <p class="mb-4">
-                                    <span class="fw-bold"> <?= $session->college ? $session->college : 'College' ?></span> <br />
+                                    <span class="fw-bold"> <?= $session->college == 'CBAS' ? 'College of Basic and Applied Science' : 'College of Humanities and social sciences' ?></span> <br />
                                 </p>
 
                                 <?= $session->department ? $session->department : 'Deepartment' ?>

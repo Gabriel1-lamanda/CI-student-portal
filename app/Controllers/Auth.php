@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Libraries\Hash;
+use App\Models\ProfileImageModel;
 use App\Models\StudentModel;
 
 class Auth extends BaseController
@@ -30,24 +31,26 @@ class Auth extends BaseController
 
         // Get the matching row from the data base.
         //confirm accuracy in the password
-
         if ($result) {
             if ($checked_password) {
+                $imageresult = $this->getStudentImage($result['id']);
                 $newdata = [
                     'firstname'  => $result['firstname'],
                     'matric'     => $result['matric'],
                     'lastname'  => $result['lastname'],
                     'college'   => $result['college'],
                     'id' => $result['id'],
+                    'department' => $result['department'],
+                    'image' => $imageresult
                 ];
 
-                $session_set = $this->session->set($newdata);
-                $this->session->start();
-                if ($session_set) {
-                    return 'bruh';
-                }
+                // echo '<pre>';
+                // print_r($newdata);
+                // die;
+                $this->session->set($newdata);
                 // return view('dashboard_view');
-                return redirect()->to('dashboard'); // redirect to the dashboard
+                return redirect()->to('panel');
+                // return view('dashboard_view'); // redirect to the dashboard
             } else {
                 log_message('error', 'user with the cookie id tried to log in on this date');
             }
@@ -68,5 +71,15 @@ class Auth extends BaseController
             return $result;
         }
         return null;
+    }
+    private function getStudentImage($id)
+    {
+        $imagemodel = model(ProfileImageModel::class);
+        $result = $imagemodel->where('id', $id)->first();
+        if ($result) {
+            return $result['path'];
+        } else {
+            return 'uploads/girl_smile.jpg';
+        }
     }
 }

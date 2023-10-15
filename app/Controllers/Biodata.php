@@ -35,11 +35,6 @@ class Biodata extends BaseController
     {
         $studentModel = model(StudentModel::class);
         $generatedString = RandomString::generateRandomString();
-
-
-
-
-
         $postdata = $this->request->getPost();
         $postdata['matric'] = '180' . $generatedString;
         $postdata['password'] = Hash::make($postdata['password']);
@@ -53,5 +48,15 @@ class Biodata extends BaseController
         echo '<pre>';
         print_r($postdata['email']);
         die;
+    }
+    public function studentdata()
+    {
+        $studentmodel = model(StudentModel::class);
+        $this->viewBag['student'] = $studentmodel->where('id', $_SESSION['id'])->first();
+        $this->viewBag['readonly'] = true;
+        // echo '<pre>';
+        // print_r($this->viewBag);
+        // die;
+        return view('auth/register_view', $this->viewBag);
     }
 }

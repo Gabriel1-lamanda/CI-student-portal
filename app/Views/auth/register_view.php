@@ -38,32 +38,32 @@
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-name">Surname</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="basic-default-name" name="lastname" />
+                          <input value="<?= isset($student) ? $student['lastname'] : '' ?>" type="text" class="form-control" id="basic-default-name" name="lastname" <?= isset($readonly) ? 'disabled' : '' ?> />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-name">Firstname</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="basic-default-name" name="firstname" />
+                          <input value="<?= isset($student) ? $student['firstname'] : '' ?>" type="text" class="form-control" id="basic-default-name" name="firstname" <?= isset($readonly) ? 'disabled' : '' ?> />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-company">College</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="basic-default-company" name="college" />
+                          <input value="<?= isset($student) ? $student['college'] : '' ?>" type="text" class="form-control" id="basic-default-company" name="college" <?= isset($readonly) ? 'disabled' : '' ?> />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-company">Department</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="basic-default-company" name="department" />
+                          <input value="<?= isset($student) ? $student['department'] : '' ?>" type="text" class="form-control" id="basic-default-company" name="department" <?= isset($readonly) ? 'disabled' : '' ?> />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-email">Email</label>
                         <div class="col-sm-10">
                           <div class="input-group input-group-merge">
-                            <input type="text" id="basic-default-email" class="form-control" name="email" aria-describedby="basic-default-email2" />
+                            <input value="<?= isset($student) ? $student['email'] : '' ?>" type="email" class="form-control" name="email" aria-describedby="basic-default-email2" />
                             <!-- <span class="input-group-text" id="basic-default-email2">@example.com</span> -->
                           </div>
                           <!-- <div class="form-text">You can use letters, numbers & periods</div> -->
@@ -72,35 +72,45 @@
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-phone">Phone No</label>
                         <div class="col-sm-10">
-                          <input name="phone" type="text" id="basic-default-phone" class="form-control phone-mask" aria-label="658 799 8941" aria-describedby="basic-default-phone" />
+                          <input value="<?= isset($student) ? $student['phone'] : '' ?>" name="phone" type="number" id="basic-default-phone" class="form-control phone-mask" aria-label="658 799 8941" aria-describedby="basic-default-phone" />
                         </div>
                       </div>
                       <div class="mb-3 row">
                         <label for="html5-text-input" class="col-md-2 col-form-label">Nationality</label>
                         <div class="col-md-10">
-                          <input name="nationality" class="form-control" type="text" value="" id="html5-text-input" />
+                          <input value="<?= isset($student) ? $student['nationality'] : '' ?>" name="nationality" class="form-control" type="text" value="" id="html5-text-input" <?= isset($readonly) ? 'disabled' : '' ?> />
                         </div>
                       </div>
 
                       <div class="mb-3 row">
                         <label for="html5-password-input" class="col-md-2 col-form-label">Password</label>
                         <div class="col-md-10">
-                          <input name="password" class="form-control" type="password" value="password" id="html5-password-input" />
+                          <input value="<?= isset($student) ? $student['password'] : '' ?>" name="password" class="form-control" type="password" value="password" id="html5-password-input" />
                         </div>
                       </div>
                       <div class="mb-3 row">
                         <label for="html5-date-input" class="col-md-2 col-form-label">Date of Birth</label>
                         <div class="col-md-10">
-                          <input name="dateofbirth" class="form-control" type="date" value="" id="html5-date-input" />
+                          <input value="<?= isset($student) ? $student['dateofbirth'] : '' ?>" name="dateofbirth" class="form-control" type="date" value="" id="html5-date-input" <?= isset($readonly) ? 'disabled' : '' ?> />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-message">Address</label>
                         <div class="col-sm-10">
-                          <textarea name="address" id="basic-default-message" class="form-control" aria-label="Hi, Do you have a moment to talk Joe?" aria-describedby="basic-icon-default-message2"></textarea>
+                          <textarea value="<?= isset($student) ? $student['address'] : '' ?>" placeholder="<?= $student['address'] ?>" name="address" id="basic-default-message" class="form-control" aria-label="Hi, Do you have a moment to talk Joe?" aria-describedby="basic-icon-default-message2"></textarea>
                         </div>
                       </div>
                       <div class="row justify-content-end">
+                        <?php if ($student) { ?>
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-success">Update</button>
+                          </div>
+                        <?php } ?>
+                        <?php if (!$student) { ?>
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                          </div>
+                        <?php } ?>
                         <div class="col-sm-10">
                           <button type="submit" class="btn btn-success">Submit</button>
                         </div>

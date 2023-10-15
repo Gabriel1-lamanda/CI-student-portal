@@ -24,22 +24,24 @@
             </div>
         </div>
         <div class="col-md">
-            <div class="card mb-3 block">
-                <div class="row g-0">
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Student Information</h5>
-                            <p class="card-text">
-                                Click here to view your Student data
-                            </p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="<?= base_url() ?>basic">
+                <div class="card mb-3 block">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Student Information</h5>
+                                <p class="card-text">
+                                    Click here to view your Student data
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="card-img card-img-right" src="<?= base_url('assets/img/elements/17.jpg') ?>" alt="Card image" />
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img class="card-img card-img-right" src="<?= base_url('assets/img/elements/17.jpg') ?>" alt="Card image" />
-                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>

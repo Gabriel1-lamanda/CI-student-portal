@@ -197,6 +197,7 @@
                 action="<?= base_url('auth-signin') ?>"
                 method="POST"
               >
+              <?= csrf_field() ?>
                 <div class="mb-3">
                   <label for="email" class="form-label"
                     >Matriculation Number</label

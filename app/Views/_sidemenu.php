@@ -1,4 +1,4 @@
-<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" style="background: white;">
+<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
         <a href="index.html" class="app-brand-link">
             <span class="app-brand-logo demo">
@@ -47,47 +47,21 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
-        <li class="menu-item active">
-            <a href="<?= base_url('panel') ?>" class="menu-link">
+        <li class="menu-item">
+            <a href="<?= base_url() ?>panel" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
-        <li class="menu-item active">
-            <a href="<?= base_url('bio-data') ?>" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-crown"></i>
-                <div data-i18n="Analytics">Student Data</div>
+
+        <!-- Layouts -->
+        <li class="menu-item">
+            <a href="<?= base_url() ?>bio-data" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Layouts">Layouts</div>
             </a>
-        </li>
-        <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Analytics">Payments</div>
-            </a>
-        </li>
-        <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Analytics">Course Registration</div>
-            </a>
-        </li>
-        <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Results</div>
-            </a>
-        </li>
-        <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Accomodation</div>
-            </a>
-        </li>
-        <li class="menu-item active">
-            <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Student Application</div>
-            </a>
+
+
         </li>
 
 

@@ -26,6 +26,12 @@ class Auth extends BaseController
     {
         $studentmodel = new StudentModel();
         $login_data = $this->request->getPost(); // get the login data and saving it in a variable
+        $isStudent = $studentmodel->where('matric', $login_data['matric'])->first();
+        if ($isStudent) {
+            $imageresult = $this->getStudentImage($isStudent['id']);
+        } else {
+            return redirect()->to('/');
+        }
         $result = $this->findStudent($login_data['matric']);
         $checked_password = Hash::check($login_data['password'], $result['password']);
 
@@ -33,7 +39,7 @@ class Auth extends BaseController
         //confirm accuracy in the password
         if ($result) {
             if ($checked_password) {
-                $imageresult = $this->getStudentImage($result['id']);
+
                 $newdata = [
                     'firstname'  => $result['firstname'],
                     'matric'     => $result['matric'],
@@ -61,7 +67,16 @@ class Auth extends BaseController
     }
     public function register()
     {
-        return view('auth/register_view');
+        // $this->viewBag['student'] = null;
+        // if (isset($this->viewBag['student'])) {
+        //     echo '<pre>';
+        //     print_r('okay');
+        //     die;
+        // } else {
+        //     return 'popop';
+        //     die;
+        // }
+        return view('auth/register_view', $this->viewBag);
     }
     private function findStudent($matric_number)
     {
@@ -75,7 +90,7 @@ class Auth extends BaseController
     private function getStudentImage($id)
     {
         $imagemodel = model(ProfileImageModel::class);
-        $result = $imagemodel->where('id', $id)->first();
+        $result = $imagemodel->where('student_id', $id)->first();
         if ($result) {
             return $result['path'];
         } else {

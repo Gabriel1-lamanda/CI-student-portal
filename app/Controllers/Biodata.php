@@ -8,6 +8,8 @@ use App\Libraries\RandomString;
 use App\Libraries\Hash;
 use App\Models\ProfileImageModel;
 use App\Models\StudentModel;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 class Biodata extends BaseController
 {
@@ -76,5 +78,39 @@ class Biodata extends BaseController
         // print_r($this->viewBag);
         // die;
         return view('auth/register_view', $this->viewBag);
+    }
+    public function download($id)
+    {
+        $studentModel = model(StudentModel::class);
+        $studentData = $studentModel->where('id', $id)->first();
+
+        $dompdf = new Dompdf();
+
+        // Load the HTML view to be converted to PDF
+        $html = view('confirmodal_view', ['user' => $studentData]);
+
+
+        $options = new Options();
+        $options->set('isHtml5ParserEnabled', true);
+        $options->set('isPhpEnabled', true);
+        $dompdf->setOptions($options);
+
+        // Load and render HTML content into a PDF file
+        $dompdf->loadHtml($html);
+        $dompdf->render();
+
+        // Output the PDF to the browser for download
+        $dompdf->stream('user_' . RandomString::RnadomToken() . '.pdf');
+
+
+
+
+
+
+
+        // $data = "Firstname: " . $studentData['firstname'] . "\n" . "Lastname: " . $studentData['lastname'];
+        // $name = 'mytext.txt';
+
+        // return $this->response->download($name, $data);
     }
 }

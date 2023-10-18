@@ -97,4 +97,10 @@ class Auth extends BaseController
             return 'uploads/girl_smile.jpg';
         }
     }
+    public function signout()
+    {
+        $session = session();
+        $session->close();
+        return redirect()->to('/');
+    }
 }

@@ -42,6 +42,7 @@ class Auth extends BaseController
 
                 $newdata = [
                     'firstname'  => $result['firstname'],
+                    'email' => $result['email'],
                     'matric'     => $result['matric'],
                     'lastname'  => $result['lastname'],
                     'college'   => $result['college'],

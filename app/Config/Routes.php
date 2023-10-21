@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 // student biodata
 
 
-$routes->group('', ['filter' => 'sessiontrack'], static function ($routes) {
+$routes->group('', ['filter' => 'isSession'], static function ($routes) {
     $routes->get('/', 'Home::index');
     $routes->get('register', 'Auth::register');
     $routes->get('panel', 'Dashboard::panel');
@@ -21,4 +21,6 @@ $routes->group('', ['filter' => 'sessiontrack'], static function ($routes) {
     $routes->get('basic', 'Biodata::studentdata'); // student biodata
     $routes->get('download/biodata/(:any)', 'Biodata::download/$1'); // student biodata
     $routes->get('sign-out', 'Auth::signout');
+    $routes->get('payments', 'Payments::index');
+    $routes->get('payments/paymentable', 'Payments::tranzgate');
 });

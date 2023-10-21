@@ -58,10 +58,14 @@
         <li class="menu-item">
             <a href="<?= base_url() ?>bio-data" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Layouts</div>
+                <div data-i18n="Layouts">Bio-data</div>
             </a>
-
-
+        </li>
+        <li class="menu-item">
+            <a href="<?= base_url() ?>payments" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Layouts">Payments</div>
+            </a>
         </li>
 
 

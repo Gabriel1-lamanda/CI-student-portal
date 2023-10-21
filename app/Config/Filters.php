@@ -25,7 +25,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'sessiontrack' => \App\Filters\SessionTracker::class,
+        'isSession' => \App\Filters\SessionTracker::class,
     ];
 
     /**
